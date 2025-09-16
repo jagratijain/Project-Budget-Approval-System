@@ -1,0 +1,7 @@
+SELECT 
+  d.name as x,
+  COALESCE(SUM(p.budget_amount), 0) as y
+FROM departments d
+LEFT JOIN projects p ON d.id = p.department_id
+GROUP BY d.id, d.name
+ORDER BY y DESC

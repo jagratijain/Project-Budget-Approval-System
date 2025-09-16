@@ -1,0 +1,14 @@
+SELECT 
+  p.id,
+  p.title,
+  p.budget_amount,
+  p.status,
+  d.name as department,
+  u.name as created_by_name,
+  p.created_date,
+  p.priority
+FROM projects p
+JOIN departments d ON p.department_id = d.id
+JOIN users u ON p.created_by = u.id
+ORDER BY p.created_date DESC
+LIMIT 8

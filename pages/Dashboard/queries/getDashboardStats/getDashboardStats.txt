@@ -1,0 +1,5 @@
+SELECT 
+  (SELECT COUNT(*) FROM projects WHERE status IN ('pending_manager', 'pending_finance', 'pending_executive')) as pending_approvals,
+  (SELECT COALESCE(SUM(budget_amount), 0) FROM projects WHERE created_date >= DATE_TRUNC('month', CURRENT_DATE)) as monthly_spend,
+  (SELECT COUNT(DISTINCT department_id) FROM projects WHERE created_date >= DATE_TRUNC('month', CURRENT_DATE)) as active_departments,
+  (SELECT COUNT(*) FROM projects WHERE status = 'approved' AND created_date >= DATE_TRUNC('month', CURRENT_DATE)) as monthly_approved
