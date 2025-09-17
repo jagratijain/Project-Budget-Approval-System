@@ -12,6 +12,10 @@
     {
       "id": "Authentication",
       "isDefault": true
+    },
+    {
+      "id": "Submit Project",
+      "isDefault": false
     }
   ]
 }

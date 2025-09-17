@@ -1,0 +1,19 @@
+INSERT INTO projects (
+  title, 
+  description, 
+  budget_amount, 
+  department_id, 
+  category_id, 
+  status, 
+  priority, 
+  created_by
+) VALUES (
+  '{{Input1.text}}',
+  '{{Input2.text}}', 
+  {{CurrencyInput1.text || 0}},
+  {{Select1.selectedOptionValue || 1}},
+  {{Select2.selectedOptionValue || 1}},
+  'draft',
+  '{{Select3.selectedOptionValue || "medium"}}',
+  1
+)

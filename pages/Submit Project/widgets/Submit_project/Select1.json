@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 51,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "oxcsyqd2r1",
+  "labelAlignment": "right",
+  "labelPosition": "Top",
+  "labelText": "Budget Category",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 6,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 51,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 44,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 51,
+  "originalTopRow": 44,
+  "parentColumnSpace": 6.89453125,
+  "parentId": "s45jppz3ab",
+  "parentRowSpace": 10,
+  "placeholderText": "Select budget category",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 55,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\"label\": \"Software\", \"value\": \"software\"},\n  {\"label\": \"Hardware\", \"value\": \"hardware\"},\n  {\"label\": \"Training\", \"value\": \"training\"},\n  {\"label\": \"Marketing\", \"value\": \"marketing\"}\n]",
+  "topRow": 44,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "88jfhnjx9u",
+  "widgetName": "Select1"
+}

@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 64,
+  "boxShadow": "none",
+  "defaultOptionValue": "blue",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "oxcsyqd2r1",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Department",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 7,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 67,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 39,
+  "mobileTopRow": 60,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 64,
+  "originalTopRow": 57,
+  "parentColumnSpace": 6.89453125,
+  "parentId": "s45jppz3ab",
+  "parentRowSpace": 10,
+  "placeholderText": "Select department",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 56,
+  "serverSideFiltering": false,
+  "sourceData": "[\n     {\"label\": \"IT\", \"value\": \"1\"},\n     {\"label\": \"Marketing\", \"value\": \"2\"},\n     {\"label\": \"Sales\", \"value\": \"3\"},\n     {\"label\": \"HR\", \"value\": \"4\"}\n   ]",
+  "topRow": 57,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "rzmzpuaih6",
+  "widgetName": "Select2"
+}
