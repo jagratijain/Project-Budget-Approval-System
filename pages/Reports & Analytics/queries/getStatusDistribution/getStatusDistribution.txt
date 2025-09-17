@@ -1,0 +1,12 @@
+SELECT 
+  CASE 
+    WHEN status = 'draft' THEN 'Draft'
+    WHEN status = 'submitted' THEN 'Submitted'
+    WHEN status LIKE 'pending_%' THEN 'Pending'
+    WHEN status = 'approved' THEN 'Approved'
+    WHEN status = 'rejected' THEN 'Rejected'
+  END as status_group,
+  COUNT(*) as count
+FROM projects
+GROUP BY status_group
+ORDER BY count DESC

@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 47,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ftffu9d520",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Filter by Amount",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 11,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 51,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 44,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 47,
+  "originalTopRow": 40,
+  "parentColumnSpace": 8.9765625,
+  "parentId": "3prpfmeq8n",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "serverSideFiltering": false,
+  "sourceData": "[\n     {\"label\": \"All Amounts\", \"value\": \"all\"},\n     {\"label\": \"Under $5K\", \"value\": \"small\"},\n     {\"label\": \"$5K - $25K\", \"value\": \"medium\"},\n     {\"label\": \"Over $25K\", \"value\": \"large\"}\n   ]",
+  "topRow": 40,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "qh6p94uyfj",
+  "widgetName": "Select2"
+}

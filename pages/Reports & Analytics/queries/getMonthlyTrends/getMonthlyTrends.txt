@@ -1,0 +1,8 @@
+SELECT 
+  TO_CHAR(DATE_TRUNC('month', created_date), 'Mon YYYY') as month,
+  SUM(CASE WHEN status = 'approved' THEN budget_amount ELSE 0 END) as approved_amount,
+  SUM(budget_amount) as requested_amount
+FROM projects
+WHERE created_date >= DATE_TRUNC('month', CURRENT_DATE - INTERVAL '6 months')
+GROUP BY DATE_TRUNC('month', created_date)
+ORDER BY DATE_TRUNC('month', created_date)

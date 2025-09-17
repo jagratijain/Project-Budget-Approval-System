@@ -1,0 +1,25 @@
+SELECT 
+  p.id,
+  p.title,
+  p.description,
+  p.budget_amount,
+  p.priority,
+  p.created_date,
+  p.status,
+  EXTRACT(DAY FROM (NOW() - p.created_date)) as days_pending,
+  u.name as requester_name,
+  u.email as requester_email,
+  d.name as department_name,
+  bc.name as category_name
+FROM projects p
+LEFT JOIN users u ON p.created_by = u.id
+LEFT JOIN departments d ON p.department_id = d.id
+LEFT JOIN budget_categories bc ON p.category_id = bc.id
+WHERE p.status IN ('submitted', 'pending_manager', 'pending_finance', 'pending_executive')
+  AND ('{{Select1.selectedOptionValue}}' = 'all' OR 
+       p.priority = '{{Select1.selectedOptionValue}}')
+  AND ('{{Select2.selectedOptionValue}}' = 'all' OR 
+       ('{{Select2.selectedOptionValue}}' = 'small' AND p.budget_amount < 5000) OR
+       ('{{Select2.selectedOptionValue}}' = 'medium' AND p.budget_amount BETWEEN 5000 AND 25000) OR
+       ('{{Select2.selectedOptionValue}}' = 'large' AND p.budget_amount > 25000))
+ORDER BY p.priority DESC, p.created_date ASC
