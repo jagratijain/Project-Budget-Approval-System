@@ -7,7 +7,19 @@
   "pages": [
     {
       "id": "Dashboard",
+      "isDefault": false
+    },
+    {
+      "id": "Authentication",
       "isDefault": true
+    },
+    {
+      "id": "Submit Project",
+      "isDefault": false
+    },
+    {
+      "id": "Project Management",
+      "isDefault": false
     }
   ]
 }

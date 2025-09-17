@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "68c94dd3b008903bf8905695_daa36485-8a03-4490-988a-e05dbc5ac6d0",
+  "gitSyncId": "68ca56c51e08727ab8cf69b7_c02d46c1-275c-4456-95d6-ba10f2337ec3",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1140,
+          "bottomRow": 900,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 500,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 48,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Dashboard",
-    "slug": "dashboard"
+    "name": "Project Management",
+    "slug": "project-management"
   }
 }
