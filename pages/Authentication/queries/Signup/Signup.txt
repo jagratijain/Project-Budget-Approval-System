@@ -1,0 +1,7 @@
+INSERT INTO login (name, email, password) 
+VALUES (
+  '{{Input3.text}}', 
+  '{{Input4.text}}', 
+  '{{Input5.text}}'
+)
+RETURNING id, name, email

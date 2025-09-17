@@ -1,0 +1,5 @@
+SELECT id, name, email 
+FROM login 
+WHERE email = '{{Input1.text}}' 
+AND password = '{{Input2.text}}'
+LIMIT 1
