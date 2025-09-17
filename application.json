@@ -16,6 +16,10 @@
     {
       "id": "Submit Project",
       "isDefault": false
+    },
+    {
+      "id": "Project Management",
+      "isDefault": false
     }
   ]
 }
