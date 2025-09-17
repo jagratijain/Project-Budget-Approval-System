@@ -1,0 +1,6 @@
+SELECT 
+  COUNT(CASE WHEN status IN ('submitted', 'pending_manager', 'pending_finance', 'pending_executive') THEN 1 END) as pending_approvals,
+  COUNT(CASE WHEN status = 'approved' AND updated_date >= DATE_TRUNC('month', CURRENT_DATE) THEN 1 END) as approved_this_month,
+  COALESCE(AVG(EXTRACT(DAY FROM (NOW() - created_date))), 0) as avg_approval_time,
+  COUNT(CASE WHEN EXTRACT(DAY FROM (NOW() - created_date)) > 7 AND status LIKE 'pending_%' THEN 1 END) as escalated_requests
+FROM projects

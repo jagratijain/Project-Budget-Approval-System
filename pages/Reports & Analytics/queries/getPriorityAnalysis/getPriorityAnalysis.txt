@@ -1,0 +1,6 @@
+SELECT 
+  priority as x,
+  COUNT(*) as y
+FROM projects
+GROUP BY priority
+ORDER BY y DESC

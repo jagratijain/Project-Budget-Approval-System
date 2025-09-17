@@ -20,6 +20,14 @@
     {
       "id": "Project Management",
       "isDefault": false
+    },
+    {
+      "id": "Approval Workflow",
+      "isDefault": false
+    },
+    {
+      "id": "Reports & Analytics",
+      "isDefault": false
     }
   ]
 }
